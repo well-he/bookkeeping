@@ -1,0 +1,27 @@
+{
+    "name": "manager-fe",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite --host --mode dev",
+        "start": "vite --host --mode dev",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@element-plus/icons-vue": "^1.1.1",
+        "axios": "^0.26.0",
+        "dayjs": "^1.11.7",
+        "element-plus": "^2.0.4",
+        "pinia": "^2.0.32",
+        "vite": "^2.8.0",
+        "vue": "^3.2.25",
+        "vue-router": "^4.0.13",
+        "ws": "^8.5.0",
+        "xlsx": "^0.18.5"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^2.2.0",
+        "sass": "^1.49.9"
+    }
+}
