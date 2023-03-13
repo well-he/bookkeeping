@@ -1,0 +1,31 @@
+##需要vscode安装插件 REST Client
+
+@base_url = http://localhost:3001/api
+
+###insert
+POST http://localhost:3001/api/bills HTTP/1.1
+content-type: application/json
+
+{
+    "user_id":1, 
+    "category_id":2, 
+    "amount": 13, 
+    "date": "2023-03-02", 
+    "note":""
+}
+
+### by user_id
+GET {{base_url}}/bills/u/1 HTTP/1.1
+content-type: application/json
+
+
+### by category_id
+GET {{base_url}}/bills/c/1 HTTP/1.1
+content-type: application/json
+
+###by time 
+GET {{base_url}}/bills/t/2023-03-02 HTTP/1.1
+
+
+###getIncomeAndExpensesInMouth
+GET {{base_url}}/bills/mouth/1 HTTP/1.1

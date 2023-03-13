@@ -1,0 +1,43 @@
+##需要vscode安装插件 REST Client
+
+@base_url = http://localhost:3001/api
+
+### 所有
+get {{base_url}}/category HTTP/1.1
+content-type: application/json
+
+
+### 单个
+get {{base_url}}/category/1 HTTP/1.1
+content-type: application/json
+
+### 插入
+POST  {{base_url}}/category HTTP/1.1
+content-type: application/json
+
+{
+    "category_name": "其他",
+    "category_icon": "qita",
+    "category_type": "income"
+}
+
+### 更新
+PUT  {{base_url}}/category HTTP/1.1
+content-type: application/json
+
+{
+    "category_id":6,
+    "category_name": "运动",
+    "category_icon": "yundong",
+    "category_type": "expenses"
+}
+
+
+
+### 删除
+DELETE  {{base_url}}/category/10 HTTP/1.1
+content-type: application/json
+
+{
+    "category_id":10
+}
