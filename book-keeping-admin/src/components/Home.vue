@@ -197,7 +197,7 @@ onMounted(async () => {
             transition: width 0.5s;
             .main-page {
                 background: #fff;
-                height: 100%;
+                // height: 100%;
                 transition: width 0.5s;
             }
         }

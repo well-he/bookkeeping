@@ -238,10 +238,7 @@ onMounted(() => {
     }
     .pager {
         margin-top: 20px;
-        position: absolute;
-
-        right: 40px;
-        bottom: -50px;
+        justify-content: flex-end;
     }
 }
 </style>

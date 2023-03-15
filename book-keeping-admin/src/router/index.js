@@ -5,7 +5,7 @@ const routes = [
     {
         name: 'system',
         path: '/',
-        // redirect: '/system',
+        redirect: '/system',
         meta: {
             title: '首页',
         },
@@ -43,11 +43,19 @@ const routes = [
                 },
             },
             {
-                name: 'categories',
-                path: '/categories',
-                component: () => import('../views/categories/index.vue'),
+                name: 'expense',
+                path: '/expense',
+                component: () => import('../views/categories/expense.vue'),
                 meta: {
-                    title: '分类管理',
+                    title: '分类管理 / 支出',
+                },
+            },
+            {
+                name: 'income',
+                path: '/income',
+                component: () => import('../views/categories/income.vue'),
+                meta: {
+                    title: '分类管理 / 收入',
                 },
             },
             {

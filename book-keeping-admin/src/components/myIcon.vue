@@ -3,6 +3,7 @@
 </template>
 
 <script setup>
+import { watch, ref } from 'vue';
 const props = defineProps({
     icon: {
         type: String,
@@ -12,5 +13,9 @@ const props = defineProps({
     },
 });
 
-const className = props.icon;
+const className = ref(props.icon);
+
+watch(props, value => {
+    className.value = value.icon;
+});
 </script>
