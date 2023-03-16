@@ -7,7 +7,7 @@ const EnvConfig = {
         baseApi: 'http://192.168.3.4:3001/api',
     },
     prod: {
-        baseApi: 'http://wellcoding.cn:3001/api',
+        baseApi: 'http://8.130.39.147:3001/api',
     },
 };
 

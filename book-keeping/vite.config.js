@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 import { VantResolver } from 'unplugin-vue-components/resolvers';
 
 export default defineConfig({
-    base: '/bookkeeping',
+    base: './',
     server: {
         base: './',
     },
